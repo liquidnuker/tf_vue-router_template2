@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import routerLinks from './links.vue'
+import routerLinks from './vue-components/links.vue'
 
-import Home from './Home.vue'
-import About from './About.vue'
-import Contact from './Contact.vue'
+import Home from './vue-components/Home.vue'
+import About from './vue-components/About.vue'
+import Contact from './vue-components/Contact.vue'
 
 Vue.use(VueRouter)
 

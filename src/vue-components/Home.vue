@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import {store} from "./store.js"
+import {store} from "../store.js"
 export default {
     name: 'routes-home',
     data () {
