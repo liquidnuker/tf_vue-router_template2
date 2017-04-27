@@ -18,8 +18,28 @@ export default {
     methods: {
       changestate: function() {
         store.state = "changed state"
-        this.message = store.state
+        console.log(store.state);
+        // this.message = store.state
+      },
+      refreshState: function() {
+        this.message = store.state;
       }
+    },
+    beforeCreate: function () {
+      console.log(store.state);
+    },
+    created: function () {
+      this.changestate();
+    },
+    beforeUpdate: function () {
+      console.log("beforeUpdate");
+    },
+    updated: function () {
+      console.log("updated");
+    },
+    mounted: function () {
+      console.log("mounted");
+      this.refreshState();
     }
   }
 </script>
